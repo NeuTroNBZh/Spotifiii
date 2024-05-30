@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotifi</title>
+    <link rel="icon" href="assets/img/spotify.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/icone.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="spotify"></p>
+        <img src="assets/img/profil/profil.jpg" class="profil" />
+      </div>
+      <nav class="navbar">
+        <a href="#popular" class="nav-button" onclick="setActive(this)">Popular</a>
+        <a href="#rock" class="nav-button" onclick="setActive(this)">Rock</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Metal</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Rap</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Jazz</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Classique</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Reggae</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Electro</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Country</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Blues</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Folk</a>
+        <a href="#" class="nav-button" onclick="setActive(this)">Pop</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <div class="menu">
+        <div class="title">
+          <h2>Recently played</h2>
+          <p class="icone recently"></p>
+        </div>
+
+        <nav class="nav-alb">
+          <div class="card">
+            <a href="playeur.html" class="album">
+              <div class="album-cover">
+                <img
+                  src="assets/img/album/cover/abbey_road.jpg"
+                  alt="Spotify Image 1"/>
+              </div>
+              <div class="album-desc">
+                <h3>Kaj</h3>
+                <p>Mahrad Hidden</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="playeur.html" class="album">
+              <div class="album-cover">
+                <img
+                  src="assets/img/album/cover/animals.webp"
+                  alt="Spotify Image 1"/>
+              </div>
+              <div class="album-desc">
+                <h3>Kaj</h3>
+                <p>Mahrad Hidden</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="playeur.html" class="album">
+              <div class="album-cover">
+                <img
+                  src="assets/img/album/cover/dangerous.jpg"
+                  alt="Spotify Image 1"
+                />
+              </div>
+              <div class="album-desc">
+                <h3>Kaj</h3>
+                <p>Mahrad Hidden</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="playeur.html" class="album">
+              <div class="album-cover">
+                <img
+                  src="assets/img/album/cover/in_the_court_of_the_crimson_king.jpg"
+                  alt="Spotify Image 1"
+                />
+              </div>
+              <div class="album-desc">
+                <h3>Kaj</h3>
+                <p>Mahrad Hidden</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="playeur.html" class="album">
+              <div class="album-cover">
+                <img
+                src="assets/img/album/cover/lecole_du_micro_dargent.webp" alt="Spotify Image 1" />
+              </div>
+              <div class="album-desc">
+                <h3>Kaj</h3>
+                <p>Mahrad Hidden</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="playeur.html" class="album">
+              <div class="album-cover">
+                <img
+                  src="assets/img/album/cover/led_zeppelin.jpg"
+                  alt="Spotify Image 1"
+                />
+              </div>
+              <div class="album-desc">
+                <h3>Kaj</h3>
+                <p>Mahrad Hidden</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="playeur.html" class="album">
+              <div class="album-cover">
+                <img
+                  src="assets/img/album/cover/264x264.jpg"
+                  alt="Spotify Image 1"
+                />
+              </div>
+              <div class="album-desc">
+                <h3>Kaj</h3>
+                <p>Mahrad Hidden</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="playeur.html" class="album">
+              <div class="album-cover">
+                <img
+                  src="assets/img/album/cover/london_calling_remastered.webp"
+                  alt="Spotify Image 1"
+                />
+              </div>
+              <div class="album-desc">
+                <h3>Kaj</h3>
+                <p>Mahrad Hidden</p>
+              </div>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <section id="popular">
+        <div class="menu">
+          <div class="title">
+            <h2>Popular</h2>
+          </div>
+
+          <nav class="nav-alb">
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/nevermind.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/R-499497-1456047383-9489.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/rage_against_the_machine.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/sgt_pepper_s_lonely_hearts_club_band.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/the_dark_side_of_the_moon.webp"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/the_velvet_underground_nico.webp"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/unknown_pleasures.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/264x264.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <section id="rock">
+        <div class="menu">
+          <div class="title">
+            <h2>Rock</h2>
+            <p class="icone soundcloud"></p>
+          </div>
+
+          <nav class="nav-alb">
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/abbey_road.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/animals.webp"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/dangerous.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/in_the_court_of_the_crimson_king.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/lecole_du_micro_dargent.webp"
+                    alt="Spotify
+                Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/led_zeppelin.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/264x264.jpg"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="playeur.html" class="album">
+                <div class="album-cover">
+                  <img
+                    src="assets/img/album/cover/london_calling_remastered.webp"
+                    alt="Spotify Image 1"
+                  />
+                </div>
+                <div class="album-desc">
+                  <h3>Kaj</h3>
+                  <p>Mahrad Hidden</p>
+                </div>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#" class="icon-container">
+        <div class="icone home"></div>
+        <p>Home</p>
+      </a>
+      <a href="#" class="icon-container">
+        <div class="icone liste"></div>
+        <p>Playlist</p>
+      </a>
+      <a href="#" class="icon-container">
+        <div class="icone search"></div>
+        <p>Search</p>
+      </a>
+      <a href="#" class="icon-container">
+        <div class="icone account"></div>
+        <p>Account</p>
+      </a>
+    </footer>
+  </body>
+</html>

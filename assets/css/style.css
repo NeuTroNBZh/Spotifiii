@@ -1,0 +1,319 @@
+/* Reset and Global Styles */
+body {
+  background-color: #181818;
+  font-family: "Inter", sans-serif;
+  width: auto;
+  height: 1100px;
+  justify-content: space-around;
+  align-items: center;
+  zoom: 110%;
+}
+
+/* Header Styles */
+header{
+  position: fixed;
+  top: 0;
+  background-color: #181818;
+  z-index: 1000;
+  width: 100%;
+}
+
+#main-content {
+  margin-top: 100px; /* Initial margin-top pour le contenu */
+}
+
+.container {
+  justify-content: space-between;
+  display: flex;
+  padding: 0px 10px 0px 10px;
+}
+
+.profil {
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  font-size: 12px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-button {
+  display: block;
+  color: #ffffff;
+  background-color: #222222;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.nav-button.active {
+  background-color: #1ed760;
+  color: #ffffff;
+}
+
+/*Main*/
+.menu {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.menu > .title {
+  padding: 10px;
+  color: white;
+  display: flex;
+  gap: 4px;
+  margin-left: -10px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.nav-alb {
+  display: flex;
+  gap: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+/* Album Styles */
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card img {
+  position: relative;
+  border-radius: 6px;
+  max-width: 170px;
+  height: auto;
+}
+
+/* Style pour les liens à l'intérieur des cartes */
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.album-desc {
+  text-align: justify;
+}
+
+.album-desc > h3 {
+  margin: 10px;
+  margin-left: 0px;
+  color: white;
+}
+
+.album-desc > p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.album {
+  overflow: hidden;
+}
+
+.album .album-cover {
+  position: relative;
+  box-shadow: 4px 4px 8px 0px rgba(56, 56, 56, 0.3);
+}
+
+.album .album-cover:hover:before {
+  /* overlay */
+  content: "";
+  background-color: rgba(43, 37, 37, 0.6);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.album .album-cover:hover:after {
+  /* bouton play */
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='47' height='47' fill='none' xmlns='http://www.w3.org/2000/svg'><g clip-path='url(%23a)'%3E%3Cpath d='M47 23.5a23.5 23.5 0 1 1-47 0 23.5 23.5 0 0 1 47 0Zm-27.054-8.54a1.468 1.468 0 0 0-2.321 1.196v14.688a1.468 1.468 0 0 0 2.32 1.195l10.282-7.343a1.469 1.469 0 0 0 0-2.392l-10.281-7.343Z' fill='%231ed760'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h47v47H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  width: 47px;
+  height: 47px;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 70%;
+}
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25%;
+  padding-right: 25%;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  background-color: #181818;
+  width: 100%;
+  z-index: 2;
+}
+
+
+/*playerfin*/
+
+.icon-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  margin-left: 5px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a.icon-container:hover {
+  color: #1ed760;
+}
+
+footer a.icon-container:hover::before {
+  background-color: #1ed760;
+}
+
+/* Icon Styles */
+.icone {
+  z-index: 1;
+}
+
+.icon-container:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* BEGIN: Hide Scrollbar */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+/* END: Hide Scrollbar */
+
+
+@media only screen and (max-width: 600px) {
+  .nav-alb {
+    gap: 10px; /* Ajustez l'espace entre les albums pour une meilleure lisibilité */
+    justify-content: space-between; /* Aligne les albums de manière à afficher au maximum trois par ligne */
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+    overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
+  }
+
+  .card {
+    flex: 0 0 calc(33.33% - 10px); /* Calcule la largeur de chaque album pour en afficher trois par ligne */
+    max-width: calc(33.33% - 10px); /* Définit la largeur maximale pour chaque album */
+  }
+
+  .card img {
+    width: 100%; /* Garde la largeur de l'image à 100%, pour qu'elle s'adapte à la largeur de son conteneur */
+    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur pour éviter la déformation */
+  }
+
+  .navbar {
+    overflow-x: auto; /* Ajoute une barre de défilement horizontale si nécessaire */
+  }
+
+  .nav-button {
+    flex: 0 0 calc(25% - 5px); /* Calcule la largeur de chaque bouton pour afficher quatre par ligne et réduit la marge */
+    max-width: calc(25% - 5px); /* Définit la largeur maximale pour chaque bouton et réduit la marge */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -5px; /* Réduit la marge autour de chaque bouton */
+    padding: 10px; /* Réduit le rembourrage à l'intérieur de chaque bouton */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre portée pour l'effet de ressort */
+  }
+
+  footer {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    background: rgba(34, 34, 34, 1);
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.3);
+
+  }
+
+  .icon-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Ajustez la taille des icônes */
+  footer .icone {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .icon-container>p{
+    margin-bottom: 5px;
+  }
+  .icon-container:before {
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 35%;
+    transform: translate(-50%, -50%);
+  }
+  /* Ajoutez d'autres styles spécifiques pour les petits écrans ici */
+}
+
+@media only screen and (min-width: 601px) {
+  
+  .icon-container {
+    margin: 5px;
+  }
+  /* Ajustez la taille des icônes */
+  .icone {
+    width: 30px;
+    height: 30px;
+  }
+}

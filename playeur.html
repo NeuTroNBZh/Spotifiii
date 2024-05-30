@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotifi</title>
+    <link rel="icon" href="assets/img/spotify.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/icone.css" />
+    <link rel="stylesheet" href="assets/css/player.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <script src="assets/js/player.js"></script>
+</head>
+
+<body>
+    <header class="container">
+        <a class="icone back" href="index.html"></a>
+        <a class="icone dotide" href="index.html"></a>
+    </header>
+    <main>
+        <div class="player-body">
+            <img src="assets/img/album/cover/london_calling_remastered.webp" alt="">
+        </div>
+        <div class="content">
+            <div class="icone like"></div>
+            <h3>Mirza Ghasemi</h3>
+            <div class="icone download"></div>
+        </div>
+        <p>Moody Moussavi</p>
+        <div class="control">
+            <div class="progress__wrapper">
+                <div class="progress__bg">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="progress__time">
+                    <div id="current_time">0:00</div>
+                    <div id="duration_time">0:00</div>
+                </div>
+            </div>
+            <audio id="audio" src="https://www.freesound.org/data/previews/338/338825_1648170-lq.mp3"></audio>
+
+            <div class="control__wrapper">
+                <button class="control shuffle"></button>
+                <div class="control__wrapper--main-element">
+                    <button class="control prev"></button>
+                    <button class="control play" onClick="togglePlay()"></button>
+                    <button class="control next"></button>
+                </div>
+                <button class="control repeat"></button>
+            </div>
+        </div>
+        <script src="assets/js/audio.js"></script>
+		
+    </main>
+
+    <footer class="foot-play">
+        <div class="logo-row">
+            <a href="" class="hotbar">
+                <svg width="60" height="3" viewBox="" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.5" y1="1.5" x2="54.5" y2="1.5" stroke="white" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+        <div class="links-container">
+            <a href="#" class="icon-container">
+                <p class="blocktext">RELATED</p>
+            </a>
+            <a href="#" class="icon-container">
+                <p class="blocktext">LYRICS</p>
+            </a>
+            <a href="#" class="icon-container">
+                <p class="blocktext">NEXT</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
