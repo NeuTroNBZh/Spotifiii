@@ -109,3 +109,6 @@ Ce projet est réalisé dans un cadre éducatif. Spotify et son logo sont des ma
 ---
 
 *Projet développé dans le cadre du BTS SIO option SLAM*
+
+## Contributors
+- Louis CERCLÉ-CHEMINEL
