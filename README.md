@@ -112,3 +112,7 @@ Ce projet est réalisé dans un cadre éducatif. Spotify et son logo sont des ma
 
 ## Contributors
 - Louis CERCLÉ-CHEMINEL
+
+## Roadmap
+- Dark mode
+- Mobile app
