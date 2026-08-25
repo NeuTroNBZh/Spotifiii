@@ -1,6 +1,6 @@
 # Spotifiii
 
-> Projet d'étude — reproduction de l'interface Spotify (page d'accueil et lecteur), réalisée dans le cadre du BTS SIO SLAM.
+> Projet personnel — reproduction de l'interface Spotify (page d'accueil et lecteur), réalisé hors cursus durant ma première année de prépa ingénieur à l'INSEN, filière CIR.
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/fr/docs/Web/CSS)
