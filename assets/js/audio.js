@@ -8,6 +8,10 @@ audio.addEventListener("playing", function(_event) {
 audio.addEventListener("pause", function(_event) {
   clearTimeout(timer);
 });
+audio.addEventListener("loadedmetadata", function(_event) {
+  var duration = Math.floor(_event.target.duration).toString();
+  document.getElementById('duration_time').innerHTML = formatSecondsAsTime(duration);
+});
 var advance = function(duration, element) {
   var progress = document.getElementById("progress");
   increment = 10/duration
@@ -51,9 +55,6 @@ function togglePlay (e) {
   } else {
     btn.classList.add('active');
     audio.play();
-    var duration = Math.floor(audio.duration).toString();
-    document.getElementById('duration_time').innerHTML = formatSecondsAsTime(duration);
- 
     isPlaying = true;
   }
 }

@@ -75,8 +75,11 @@ function setActive(element) {
   // Déterminer la hauteur du header
   var headerHeight = document.querySelector("header").offsetHeight;
 
-  // Récupérer la position de la section
+  // Récupérer la position de la section (certaines catégories n'ont pas encore de section)
   var section = document.getElementById(sectionId);
+  if (!section) {
+    return;
+  }
   var targetPosition = section.getBoundingClientRect().top;
 
   // Déplacer la page vers la section associée en tenant compte de la hauteur du header
